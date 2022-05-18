@@ -7,7 +7,6 @@ const Navigation = props => {
             <div className="menu-name">Carlos <span className="last-name">Hernandez</span></div>
             <nav>
                 <Link to="/portfolio-2022">Home</Link>
-                {/* <Link to="/about">About</Link> */}
             </nav>
         </div>
     )
