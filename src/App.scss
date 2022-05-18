@@ -1,0 +1,124 @@
+@import "utils";
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+
+
+.app {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+
+  .menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quantico', sans-serif;
+
+    .menu-name {
+      color: rgb(36, 36, 36);
+      font-weight: bold;
+      font-size: 25px;
+
+      .last-name {
+        color: $portfolio-blue;
+      }
+    }
+
+    nav {
+      a {
+        color: rgb(143, 143, 143);
+        margin: 0 0 0 15px;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        position: relative;
+        @include transition(all linear 0.25s);
+
+        &::after {
+          content: '';
+          width: 0px;
+          height: 5px;
+          background-color: $portfolio-blue;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          @include translate(-50%, 0);
+          @include transition(all linear 0.25s)
+        }
+
+        &:hover {
+          color: rgb(24, 24, 24);
+
+          &::after {
+            content: '';
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    @include border-radius(10px);
+    overflow: hidden;
+    box-shadow: 0 15px 25px 0 rgb(218, 218, 218);
+    border: 1px solid #eee;
+    @include transition(all linear 0.1s);
+
+    .top-section {
+      background-color: $portfolio-blue;
+      padding: 50px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .avatar-side {
+        background-color: #fff;
+        border-radius: 7px;
+        border: 3px solid rgb(71, 71, 71);
+        width: 300px;
+        height: 300px;
+        margin: 50px 0 -100px 0;
+
+        img {
+          margin: 0;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+
+      .name-side {
+        text-align: center;
+        width: 50%;
+
+        h1 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .bottom-section {
+      background-color: #fff;
+      padding: 100px 50px 50px 50px;
+      text-align: center;
+    }
+  }
+}
