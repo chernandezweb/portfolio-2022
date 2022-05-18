@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { motion } from "framer-motion";
 import './App.scss';
 import Navigation from './components/Navigation';
 
@@ -14,11 +13,7 @@ function App() {
         <Navigation />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio-2022" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-
+          <Route path="/portfolio-2022" element={<Home />} />
         </Routes>
 
       </BrowserRouter>
