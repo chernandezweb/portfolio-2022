@@ -5,6 +5,7 @@ const Navigation = props => {
     return (
         <div className="menu">
             <div className="menu-name">Carlos <span className="last-name">Hernandez</span></div>
+
             <nav>
                 <Link to="/portfolio-2022">Home</Link>
             </nav>
