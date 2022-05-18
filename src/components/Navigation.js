@@ -8,7 +8,6 @@ const Navigation = props => {
             <nav>
                 <Link to="/">Home</Link>
                 {/* <Link to="/about">About</Link> */}
-
             </nav>
         </div>
     )
