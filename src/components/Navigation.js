@@ -13,7 +13,7 @@ const Navigation = props => {
                 <div className="menu-name">Carlos <span className="last-name">Hernandez</span></div>
 
                 <nav>
-                    <Link to="/portfolio-2022">Home</Link>
+                    <Link to="/portfolio-developer">Home</Link>
                 </nav>
             </div>
 
@@ -27,7 +27,7 @@ const Navigation = props => {
                     className="burger-icon" />
 
                 <nav className={'mobile-nav ' + (displayMobileMenu ? 'mobile-nav-visible' : 'mobile-nav-hidden')} >
-                    <Link to="/portfolio-2022">Home</Link>
+                    <Link to="/portfolio-developer">Home</Link>
                 </nav>
             </div>
 

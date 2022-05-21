@@ -14,7 +14,7 @@ function App() {
         <Navigation />
 
         <Routes>
-          <Route path="/portfolio-2022" element={<Home />} />
+          <Route path="/portfolio-developer" element={<Home />} />
         </Routes>
 
       </BrowserRouter>
