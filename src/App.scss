@@ -13,58 +13,135 @@ body,
 .app {
   background-color: #f5f5f5;
   min-height: 100vh;
+  padding: 0 15px;
+  overflow-x: hidden;
 
   .menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-family: 'Quantico', sans-serif;
 
-    .menu-name {
-      color: rgb(36, 36, 36);
-      font-weight: bold;
-      font-size: 25px;
+    .desktop-menu {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      .last-name {
-        color: $portfolio-blue;
+      @media #{$md-device} {
+        display: none;
       }
-    }
 
-    nav {
-      a {
-        color: rgb(143, 143, 143);
-        margin: 0 0 0 15px;
+      .menu-name {
+        color: rgb(36, 36, 36);
         font-weight: bold;
-        font-size: 20px;
-        text-decoration: none;
-        position: relative;
-        @include transition(all linear 0.25s);
+        font-size: 25px;
 
-        &::after {
-          content: '';
-          width: 0px;
-          height: 5px;
-          background-color: $portfolio-blue;
-          position: absolute;
-          bottom: -5px;
-          left: 50%;
-          @include translate(-50%, 0);
-          @include transition(all linear 0.25s)
+        .last-name {
+          color: $portfolio-blue;
         }
+      }
 
-        &:hover {
-          color: rgb(24, 24, 24);
+      nav {
+        a {
+          color: rgb(143, 143, 143);
+          margin: 0 0 0 15px;
+          font-weight: bold;
+          font-size: 20px;
+          text-decoration: none;
+          position: relative;
+          @include transition(all linear 0.25s);
 
           &::after {
             content: '';
-            width: 100%;
+            width: 0px;
+            height: 5px;
+            background-color: $portfolio-blue;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            @include translate(-50%, 0);
+            @include transition(all linear 0.25s)
+          }
+
+          &:hover {
+            color: rgb(24, 24, 24);
+
+            &::after {
+              content: '';
+              width: 100%;
+            }
           }
         }
       }
     }
+
+    .mobile-menu {
+      display: none;
+      position: relative;
+      // overflow-x: hidden;
+
+      @media #{$md-device} {
+        display: flex;
+        background-color: $portfolio-blue;
+        padding: 25px 15px;
+        margin: 0 -15px 50px -15px;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-name {
+          color: #fff;
+          font-weight: bold;
+          font-size: 25px;
+        }
+
+        .burger-icon {
+          color: #fff;
+          font-size: 25px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .mobile-nav {
+          position: absolute;
+          background-color: $portfolio-blue;
+          top: 100%;
+          right: 0;
+          z-index: 999;
+          width: 300px;
+          max-width: 100%;
+          padding: 25px;
+          text-align: left;
+          height: calc(100vh - 86px);
+          box-sizing: border-box;
+          @include transition(all linear 0.25s);
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+
+            &:hover {
+              color: rgb(24, 24, 24);
+            }
+          }
+
+          &.mobile-nav-hidden {
+            @include translate(100%, 0);
+            opacity: 0;
+          }
+
+          &.mobile-nav-visible {
+            @include translate(0, 0);
+            opacity: 1;
+          }
+        }
+
+      }
+
+    }
+
   }
 
   .home {
@@ -85,19 +162,38 @@ body,
       justify-content: space-between;
       align-items: center;
 
+      @media #{$sm-device} {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       .avatar-side {
         background-color: #fff;
         border-radius: 7px;
         border: 3px solid rgb(71, 71, 71);
-        width: 300px;
-        height: 300px;
         margin: 50px 0 -100px 0;
+        @include transition(all linear 0.25s);
+        box-shadow: 0 15px 25px 0 rgb(43, 43, 43);
+
+        &:hover {
+          @include translate(0, -5%)
+        }
 
         img {
           margin: 0;
           width: 300px;
           height: 300px;
           object-fit: cover;
+
+          @media #{$md-device} {
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        @media #{$md-device} {
+          margin: 0;
         }
       }
 
@@ -105,12 +201,32 @@ body,
         text-align: center;
         width: 50%;
 
+        @media #{$sm-device} {
+          width: 100%;
+        }
+
         h1 {
           font-size: 50px;
         }
 
         p {
           font-size: 25px;
+        }
+
+        .links {
+          svg {
+            background-color: #fff;
+            color: $portfolio-blue;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+
+            @include transition(all linear 0.25s);
+
+            &:hover {
+              color: #000;
+            }
+          }
         }
       }
     }

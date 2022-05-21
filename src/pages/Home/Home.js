@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-
+import avatarProfile from '../../media/avatar-profile.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Home = props => {
 
@@ -12,11 +14,20 @@ const Home = props => {
         >
             <div className="top-section">
                 <div className="avatar-side">
-                    <img src="https://gravatar.com/avatar/33fedee00d9531778cf2aefa53c0fab4?s=400&d=robohash&r=x" alt="avatar" />
+                    <img src={avatarProfile} alt="avatar" />
                 </div>
                 <div className="name-side">
                     <h1>Carlos Hernandez</h1>
                     <p>Full-Stack Developer</p>
+                    <div className="links">
+                        <a href="https://github.com/chernandezweb" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/carlos-hernandez-7a0177133/" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                    </div>
                 </div>
 
             </div>
