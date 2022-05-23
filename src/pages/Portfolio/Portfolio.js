@@ -28,7 +28,14 @@ const Portfolio = props => {
 
             <div className="bottom-section">
                 <Zoom>
-                    <p>Markup that will be revealed on scroll</p>
+                    <div className="project-cnt">
+                        <img className="project-image" src="https://i.imgur.com/RZAgcwq.png" alt="Léger Opinion (LÉO)" />
+                        <div className="project-description-cnt">
+                            <div className="project-title">Léger Opinion (LÉO)</div>
+                            <div className="project-desc">Léger Opinion contains a "marketing side" website and a connected application where users can access Leger surveys and be compensated for it. This web platform was developped with the php templating framework Twig and using html, Bootstrap, scss/css a</div>
+                            <div className="project-tech">Technology used : Ionic, Angular, Twig, Html, SCSS, Javascript, Jquery</div>
+                        </div>
+                    </div>
                 </Zoom>
             </div>
 
