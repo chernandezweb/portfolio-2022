@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import { motion } from "framer-motion";
 import avatarProfile from '../../media/avatar-profile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { useAppContext } from "../../useAppState";
 
 const Home = props => {
+
+    const { state, actions } = useAppContext();
+
+    useEffect(() => {
+        actions.setPageName('Home');
+    }, [])
 
     return (
         <motion.div
@@ -43,6 +51,10 @@ const Home = props => {
                         <span>24</span>
                     </div>
                     <div>
+                        <span>Languages</span>
+                        <span>French, English and Spanish</span>
+                    </div>
+                    <div>
                         <span>Residence</span>
                         <span>Canada</span>
                     </div>
@@ -53,7 +65,7 @@ const Home = props => {
                     </div>
 
                     <div>
-                        <span>email</span>
+                        <span>Email</span>
                         <span>chernandezweb@gmail.com</span>
                     </div>
                 </div>

@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useAppContext } from "../useAppState";
 
 const Navigation = props => {
 
+    const { state, actions } = useAppContext();
     const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
 
     const closeMenu = () => {
@@ -17,8 +19,8 @@ const Navigation = props => {
                 <div className="menu-name">Carlos <span className="last-name">Hernandez</span></div>
 
                 <nav>
-                    <Link to="/portfolio-developer">Home</Link>
-                    <Link to="/portfolio-developer/portfolio">Portfolio</Link>
+                    <Link to="/portfolio-developer" className={state.pageName === "Home" ? 'menu-page-active' : ''}>Home</Link>
+                    <Link to="/portfolio-developer/portfolio" className={state.pageName === "Portfolio" ? 'menu-page-active' : ''}>Portfolio</Link>
                 </nav>
             </div>
 

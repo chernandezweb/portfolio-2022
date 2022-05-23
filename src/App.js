@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
+import { AppContext, useAppState } from './useAppState'
 
 import Navigation from './components/Navigation';
 
@@ -8,20 +9,25 @@ import Portfolio from './pages/Portfolio/Portfolio';
 
 
 function App() {
+
+  const { state, actions } = useAppState();
+
   return (
-    <div className="app">
-      <BrowserRouter>
+    <AppContext.Provider value={{ state, actions }} >
+      <div className="app">
+        <BrowserRouter>
 
-        <Navigation />
+          <Navigation />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio-developer" element={<Home />} />
-          <Route path="/portfolio-developer/portfolio" element={<Portfolio />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio-developer" element={<Home />} />
+            <Route path="/portfolio-developer/portfolio" element={<Portfolio />} />
+          </Routes>
 
-      </BrowserRouter>
-    </div>
+        </BrowserRouter>
+      </div>
+    </AppContext.Provider>
   );
 }
 

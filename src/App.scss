@@ -67,9 +67,18 @@ body,
             @include transition(all linear 0.25s)
           }
 
+
+
           &:hover {
             color: rgb(24, 24, 24);
 
+            &::after {
+              content: '';
+              width: 100%;
+            }
+          }
+
+          &.menu-page-active {
             &::after {
               content: '';
               width: 100%;
@@ -167,14 +176,6 @@ body,
   }
 
   .home-page {
-    // max-width: 1200px;
-    // box-sizing: border-box;
-    // margin: 0 auto;
-    // @include border-radius(10px);
-    // overflow: hidden;
-    // box-shadow: 0 15px 25px 0 rgb(218, 218, 218);
-    // border: 1px solid #eee;
-    // @include transition(all linear 0.1s);
 
     .top-section {
       background-color: $portfolio-blue;
@@ -302,8 +303,11 @@ body,
           padding: 10px;
           background-color: #fff;
 
+          @include transition(all linear 0.25s);
+
           &:hover {
             cursor: pointer;
+            box-shadow: 0 5px 10px 0 rgb(63, 63, 63);
           }
         }
       }
@@ -354,7 +358,8 @@ body,
 
       .project-cnt {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin: 0 0 100px 0;
 
         @media #{$md-device} {
           flex-direction: column;
@@ -373,7 +378,8 @@ body,
         }
 
         .project-description-cnt {
-          padding: 0 0 0 15px;
+          padding: 0 0 0 25px;
+          width: 100%;
 
           @media #{$md-device} {
             padding: 0;
