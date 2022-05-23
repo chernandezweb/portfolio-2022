@@ -14,6 +14,7 @@ const Navigation = props => {
 
                 <nav>
                     <Link to="/portfolio-developer">Home</Link>
+                    <Link to="/portfolio-developer/portfolio">Portfolio</Link>
                 </nav>
             </div>
 
@@ -28,6 +29,7 @@ const Navigation = props => {
 
                 <nav className={'mobile-nav ' + (displayMobileMenu ? 'mobile-nav-visible' : 'mobile-nav-hidden')} >
                     <Link to="/portfolio-developer">Home</Link>
+                    <Link to="/portfolio-developer/portfolio">Portfolio</Link>
                 </nav>
             </div>
 
