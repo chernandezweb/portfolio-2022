@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio-developer/static/css/main.c3c037dd.css",
-    "main.js": "/portfolio-developer/static/js/main.2a055d69.js",
-    "static/js/787.69a70f5a.chunk.js": "/portfolio-developer/static/js/787.69a70f5a.chunk.js",
+    "main.css": "/portfolio-developer/static/css/main.7a23b6ff.css",
+    "main.js": "/portfolio-developer/static/js/main.bc2d6107.js",
+    "static/js/787.0022e730.chunk.js": "/portfolio-developer/static/js/787.0022e730.chunk.js",
     "static/media/avatar-profile.jpg": "/portfolio-developer/static/media/avatar-profile.50f4b445e183a58555e9.jpg",
+    "static/media/clash.jpg": "/portfolio-developer/static/media/clash.1328bed0578eed2c85db.jpg",
+    "static/media/zoo-granby-lions.jpg": "/portfolio-developer/static/media/zoo-granby-lions.2e6d1e3fcd5bd9292291.jpg",
+    "static/media/admin-icite.jpg": "/portfolio-developer/static/media/admin-icite.e395ca09b9a4139403eb.jpg",
+    "static/media/cms-icite.jpg": "/portfolio-developer/static/media/cms-icite.859f96354eef1b53c01d.jpg",
+    "static/media/on-joue-au-docteur.jpg": "/portfolio-developer/static/media/on-joue-au-docteur.3422bd4474b50fbaa994.jpg",
+    "static/media/le-cuistot.jpg": "/portfolio-developer/static/media/le-cuistot.53d1112563df8e4b24c6.jpg",
+    "static/media/la-patisserie.jpg": "/portfolio-developer/static/media/la-patisserie.7e10d81763fbd0165de5.jpg",
+    "static/media/une-autre-histoire.jpg": "/portfolio-developer/static/media/une-autre-histoire.c5eba035317581bb49a1.jpg",
+    "static/media/lms-icite.jpg": "/portfolio-developer/static/media/lms-icite.5cd79932734ac255b42a.jpg",
+    "static/media/ibl.jpg": "/portfolio-developer/static/media/ibl.72b98afcece96ffc6fe2.jpg",
+    "static/media/artv.jpg": "/portfolio-developer/static/media/artv.a5197a4c13aa8f6e8b82.jpg",
+    "static/media/outils-web-intact.jpg": "/portfolio-developer/static/media/outils-web-intact.8f17c5b39e7f51b186c3.jpg",
+    "static/media/explora.jpg": "/portfolio-developer/static/media/explora.5668c44287bc2d5edd95.jpg",
+    "static/media/my-crypto-base.jpg": "/portfolio-developer/static/media/my-crypto-base.bccb401cfd0e2a80f188.jpg",
+    "static/media/legeropinion.jpg": "/portfolio-developer/static/media/legeropinion.1389148ee405b7f9e749.jpg",
     "index.html": "/portfolio-developer/index.html",
-    "main.c3c037dd.css.map": "/portfolio-developer/static/css/main.c3c037dd.css.map",
-    "main.2a055d69.js.map": "/portfolio-developer/static/js/main.2a055d69.js.map",
-    "787.69a70f5a.chunk.js.map": "/portfolio-developer/static/js/787.69a70f5a.chunk.js.map"
+    "main.7a23b6ff.css.map": "/portfolio-developer/static/css/main.7a23b6ff.css.map",
+    "main.bc2d6107.js.map": "/portfolio-developer/static/js/main.bc2d6107.js.map",
+    "787.0022e730.chunk.js.map": "/portfolio-developer/static/js/787.0022e730.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3c037dd.css",
-    "static/js/main.2a055d69.js"
+    "static/css/main.7a23b6ff.css",
+    "static/js/main.bc2d6107.js"
   ]
 }
