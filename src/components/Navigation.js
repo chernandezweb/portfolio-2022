@@ -7,6 +7,10 @@ const Navigation = props => {
 
     const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
 
+    const closeMenu = () => {
+        setDisplayMobileMenu(false)
+    };
+
     return (
         <div className="menu">
             <div className="desktop-menu">
@@ -28,8 +32,8 @@ const Navigation = props => {
                     className="burger-icon" />
 
                 <nav className={'mobile-nav ' + (displayMobileMenu ? 'mobile-nav-visible' : 'mobile-nav-hidden')} >
-                    <Link to="/portfolio-developer">Home</Link>
-                    <Link to="/portfolio-developer/portfolio">Portfolio</Link>
+                    <Link to="/portfolio-developer" onClick={closeMenu}>Home</Link>
+                    <Link to="/portfolio-developer/portfolio" onClick={closeMenu}>Portfolio</Link>
                 </nav>
             </div>
 

@@ -33,7 +33,7 @@ const Portfolio = props => {
                         <div className="project-description-cnt">
                             <div className="project-title">Léger Opinion (LÉO)</div>
                             <div className="project-desc">Léger Opinion contains a "marketing side" website and a connected application where users can access Leger surveys and be compensated for it. This web platform was developped with the php templating framework Twig and using html, Bootstrap, scss/css a</div>
-                            <div className="project-tech">Technology used : Ionic, Angular, Twig, Html, SCSS, Javascript, Jquery</div>
+                            <div className="project-tech">Ionic, Angular, Twig, Html, SCSS, Javascript, Jquery</div>
                         </div>
                     </div>
                 </Zoom>

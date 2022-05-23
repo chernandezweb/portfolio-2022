@@ -128,6 +128,8 @@ body,
             text-decoration: none;
             color: #fff;
             font-size: 20px;
+            display: block;
+            margin: 0 0 15px 0;
 
             &:hover {
               color: rgb(24, 24, 24);
@@ -340,10 +342,61 @@ body,
       color: #fff;
       font-weight: bold;
       text-align: center;
+
+      @media #{$md-device} {
+        padding: 25px;
+        font-size: 30px;
+      }
     }
 
     .bottom-section {
       padding: 50px;
+
+      .project-cnt {
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$md-device} {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .project-image {
+          width: 350px;
+          height: auto;
+          border-radius: 7px;
+
+          @media #{$md-device} {
+            margin: 0 0 25px 0;
+          }
+        }
+
+        .project-description-cnt {
+          padding: 0 0 0 15px;
+
+          @media #{$md-device} {
+            padding: 0;
+          }
+
+          .project-title {
+            border-bottom: 3px solid $portfolio-blue;
+            padding: 0 0 10px 0;
+            margin: 0 0 25px 0;
+            color: $titles-grey;
+            font-weight: bold;
+            font-size: 20px;
+          }
+
+          .project-tech {
+            background-color: $portfolio-blue;
+            color: #fff;
+            padding: 10px;
+            margin: 25px 0 0 0;
+            border-radius: 7px;
+          }
+        }
+      }
     }
   }
 }
