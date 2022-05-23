@@ -32,7 +32,31 @@ const Home = props => {
 
             </div>
             <div className="bottom-section">
-                Portfolio en construction ...
+                <div className="about-me-side">
+                    <p className="about-me-title">About <span>me</span></p>
+                    <p className="about-me-text">Hello, I'm Carlos Hernandez. I am a Full-Stack web developer from the south-shore of Montreal (Qc, Canada). </p>
+                    <button className="resume-btn">DOWNLOAD RESUME</button>
+                </div>
+                <div className="infos-side">
+                    <div>
+                        <span>Age</span>
+                        <span>24</span>
+                    </div>
+                    <div>
+                        <span>Residence</span>
+                        <span>Canada</span>
+                    </div>
+
+                    <div>
+                        <span>Address</span>
+                        <span>Montreal, Canada</span>
+                    </div>
+
+                    <div>
+                        <span>email</span>
+                        <span>chernandezweb@gmail.com</span>
+                    </div>
+                </div>
             </div>
         </motion.div >
 

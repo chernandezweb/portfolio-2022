@@ -19,6 +19,10 @@ body,
   .menu {
     font-family: 'Quantico', sans-serif;
 
+    @media #{$md-device} {
+      margin: 0 0 120px 0;
+    }
+
     .desktop-menu {
       max-width: 1200px;
       margin: 0 auto;
@@ -77,7 +81,10 @@ body,
 
     .mobile-menu {
       display: none;
-      position: relative;
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 99999;
       // overflow-x: hidden;
 
       @media #{$md-device} {
@@ -169,12 +176,9 @@ body,
       }
 
       .avatar-side {
-        background-color: #fff;
-        border-radius: 7px;
-        border: 3px solid rgb(71, 71, 71);
         margin: 50px 0 -100px 0;
         @include transition(all linear 0.25s);
-        box-shadow: 0 15px 25px 0 rgb(43, 43, 43);
+
 
         &:hover {
           @include translate(0, -5%)
@@ -185,6 +189,9 @@ body,
           width: 300px;
           height: 300px;
           object-fit: cover;
+          border-radius: 7px;
+          border: 2px solid rgb(71, 71, 71);
+          box-shadow: 0 15px 25px 0 rgb(71, 54, 54);
 
           @media #{$md-device} {
             width: 250px;
@@ -234,7 +241,79 @@ body,
     .bottom-section {
       background-color: #fff;
       padding: 100px 50px 50px 50px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @media #{$md-device} {
+        flex-direction: column;
+      }
+
+      .about-me-side,
+      .infos-side {
+        width: 50%;
+
+        @media #{$md-device} {
+          width: 100%;
+        }
+      }
+
+      .about-me-side {
+        @media #{$md-device} {
+          margin: 0 0 75px 0;
+        }
+
+        .about-me-title {
+          color: $titles-grey;
+          font-weight: bold;
+          margin: 0 0 15px 0;
+
+          span {
+            color: $portfolio-blue;
+          }
+        }
+
+        .about-me-text {
+          color: #353535
+        }
+
+        .resume-btn {
+          color: $titles-grey;
+          border: none;
+          border-radius: 7px;
+          box-shadow: 0 5px 10px 0 rgb(131, 131, 131);
+          margin: 20px 0 0 0;
+          padding: 10px;
+          background-color: #fff;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .infos-side {
+        padding-left: 25px;
+
+        @media #{$md-device} {
+          padding: 0;
+        }
+
+        div {
+          display: flex;
+          padding-bottom: 15px;
+
+          span:first-child {
+            width: 150px;
+            font-weight: bold;
+            color: $titles-grey;
+          }
+
+          span:nth-child(2) {
+            color: $text-grey;
+          }
+        }
+      }
     }
   }
 }
