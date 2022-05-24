@@ -203,7 +203,7 @@ body,
   .portfolio-page {
     max-width: 1200px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     @include border-radius(10px);
     overflow: hidden;
     box-shadow: 0 15px 25px 0 rgb(218, 218, 218);

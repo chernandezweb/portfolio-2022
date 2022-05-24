@@ -15,104 +15,129 @@ const Portfolio = props => {
         {
             title: "Icité (lms)",
             image: require('../../media/lms-icite.jpg'),
-            desc: "icite lms \n\nDemo Account (Connexion externe)-----\nemail: test@icite.ca\npassword: demo123",
+            desc_fr: "Icité est une plateforme de formation en ligne utilisée par le réseau de courtage d'Intact Assurance ainsi que les employé et souscripteur. Étant le seul développeur lors du lancement de cette idée au sein de l'équipe Formation et Développement j'ai dévoloppé cette plateforme 'from scratch' pour survenir aux différents besoin de formation dont les autres plateforme internes ne répondaient pas.  \n\nDemo Account (Connexion externe)-----\nemail: test@icite.ca\npassword: demo123",
+            desc_en: "Icité is an online training platform used by the Intact Insurance brokerage network as well as employees and underwriters. Being the only developer when launching this idea within the Training and Development team, I developed this platform 'from scratch' to meet the different training needs that other internal platforms did not meet. \n\nDemo Account (External Connection)-----\nemail: test@icite.ca\npassword: demo123",
             url: "https://icite.ca/",
-            tech: "React, NodeJs"
+            tech: "React, NodeJs, GraphQl"
         },
         {
             title: "Icité (admin)",
             image: require('../../media/admin-icite.jpg'),
-            desc: "icite admin",
-            tech: "React, NodeJs"
+            desc_fr: "Cette plateforme est le côté d'administration d'Icité contenant toute la gestion des enregistrements de participants, les gestionnaires, les cohortes, les accès, les rapports, l'API et plus.",
+            desc_en: "This platform is the administration side of Icité containing all the management of participant registrations, managers, cohorts, access, reports, API and more.",
+            tech: "React, NodeJs, GraphQl"
         },
         {
             title: "Icité (cms)",
             image: require('../../media/cms-icite.jpg'),
-            desc: "icite cms",
-            tech: "NodeJs"
+            desc_fr: "Ceci est le gestionnaire de contenu développé et personnalisé pour les différents types de contenu de formation.",
+            desc_en: "This is the content manager developed and customized for different types of training content.",
+            tech: "NodeJs, Directus (Headless CMS)"
         },
         {
             title: "Other web tools for underwriters at Intact",
             image: require('../../media/outils-web-intact.jpg'),
-            desc: "Other web tools for underwriters at Intact",
+            desc_fr: "Ceci contient différents outils en format web développé pour aider les souscripteurs sur certaines tâches spécifiques",
+            desc_en: "This contains various tools in web format developed to help underwriters with specific tasks",
+            url: "https://experiencedeveloppement.net/outils/",
             tech: "React, NodeJs"
         },
         {
             title: "Léger Opinion (LÉO)",
             image: require('../../media/legeropinion.jpg'),
-            desc: "Léger Opinion contains a \"marketing side\" website and a connected application where users can access Leger surveys and be compensated for it. This web platform was developped with the php templating framework Twig and using html, Bootstrap, scss/css, angular and Ionic",
+            desc_fr: "Léger Opinion est un projet contenant un site web \"marketing\" ainsi qu'une application connectée où les utilisateurs peuvent accéder à des sondages offerts par Léger et recevoir une compensation.",
+            desc_en: "Léger Opinion contains a \"marketing side\" website and a connected application where users can access Leger surveys and be compensated for it",
+            url: "https://www.legeropinion.com/",
             tech: "Ionic, Angular, Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Indice du bonheur Léger",
             image: require('../../media/ibl.jpg'),
-            desc: "Indice de bonheur Léger is a web platform where users can answer to 3 differents surveys to know their happiness index, their mood index or their happiness at work. This web platform was developped with the php templating framework Twig and using html,",
+            desc_fr: "Indice de bonheur Léger est une plateforme web dans laquelle les utilisateurs peuvent répondre à 3 différents types de sondages pour connaître leur indice de bonheur, leur indice de l'humeur ou leur indice de bonheur au travail.",
+            desc_en: "Indice de bonheur Léger is a web platform where users can answer to 3 differents surveys to know their happiness index, their mood index or their happiness at work.",
+            url: "https://indicedebonheur.com/",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Interactive game Zone des lions (Zoo Granby)",
             image: require('../../media/zoo-granby-lions.jpg'),
-            desc: "This project is an interactive game made using Unity and displayed in the Lions zone at the Zoo Granby",
+            desc_fr: "Ce projet consistait à développer une plateforme intéractive avec Unity pour afficher du contenu à propos de la zone des lions au Zoo Granby.",
+            desc_en: "This project is an interactive game made using Unity and displayed in the Lions zone at the Zoo Granby",
             tech: "Unity"
         },
         {
             title: "Une Autre Histoire (personnages)",
             image: require('../../media/une-autre-histoire.jpg'),
-            desc: "Une autre histoire (personnages) is a web platform developped to show all characters of the TV Show (Une autre histoire) in a creative way. Each character float in the page in a way they all fit randomlly well in it and they all follow the movement of",
+            desc_fr: "Une autre histoire (personnage) est une plateforme web développée pour montrer les personnages de la série télé diffusée sur Radio Canada (Une autre histoire) d'une manière créative.",
+            desc_en: "Une autre histoire (personnages) is a web platform developped to show all characters of the TV Show (Une autre histoire) in a creative way.",
+            url: "https://ici.radio-canada.ca/uneautrehistoirepersonnages/",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Ici Explora",
             image: require('../../media/explora.jpg'),
-            desc: "The (Ici Explora) project consisted to develop the redesign of the old website of the TV channel Ici Explora from Radio Canada. This web platform was developped with the php templating framework Twig and using html, Bootstrap, scss/css and javascript/jq",
+            desc_fr: "Le projet (Ici Explora) consistait au développement du redesign de l'ancienne version du site web de la chaîne de télé Ici Explora de Radio Canada.",
+            desc_en: "The (Ici Explora) project consisted to develop the redesign of the old website of the TV channel Ici Explora from Radio Canada.",
+            url: "https://ici.exploratv.ca/",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Ici Artv",
             image: require('../../media/artv.jpg'),
-            desc: "The (Ici Artv) project was mostly a project in coordination with the Ici Explora project where it consisted to develop the redesign of the old website of the TV channel Ici Artv from Radio Canada. This web platform was developped with the php templating",
+            desc_fr: "Le projet (Ici Artv) était pratiquement en coordination avec le projet Ici Explora dans lequel nous devions développer le redesign de l'ancienne version du site web de la chaîne de télé Ici Artv de Radio Canada.",
+            desc_en: "The (Ici Artv) project was mostly a project in coordination with the Ici Explora project where it consisted to develop the redesign of the old website of the TV channel Ici Artv from Radio Canada.",
+            url: "https://ici.artv.ca/",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Clash (Vrak TV)",
             image: require('../../media/clash.jpg'),
-            desc: "The (Clash) project was to develop the front end side for the new TV show at Vrak TV called Clash. It presented different informations about the show, including videos, characters and episodes. This web platform was developped with the php templating f",
+            desc_fr: "Le projet (Clash) était de développer le côté front-end du site web pour une nouvelle série télé de Vrak TV nommée Clash. Le site web présente différentes informations à propos de la série incluant des vidéos, les personnages ainsi que des épisodes.",
+            desc_en: "The (Clash) project was to develop the front end side for the new TV show at Vrak TV called Clash. It presented different informations about the show, including videos, characters and episodes.",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "On joue au docteur",
             image: require('../../media/on-joue-au-docteur.jpg'),
-            desc: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
+            desc_fr: "Le projet (On joue au docteur) consistait à développer le côté front-end du site web pour la nouvelle série télé de Canalvie nommée On joue au docteur.",
+            desc_en: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Max et Livia",
             image: require('../../media/max-et-livia.jpg'),
-            desc: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
+            desc_fr: "Le projet (Max et Livia) était de développer le côté front-end du site web pour la série télé Max et Livia.",
+            desc_en: "The project (Max et Livia) was to develop the front-end side of the website for the TV series Max et Livia.",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "Fous des bateaux",
             image: require('../../media/fous-des-bateaux.jpg'),
-            desc: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
+            desc_fr: "Le projet (Fous des bateaux) était de développer le côté front-end du site web pour la série télé Fous des bateaux.",
+            desc_en: "The project (Fous des bateaux) was to develop the front-end side of the website for the TV series Fous des bateaux.",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
             title: "My Crypto Base",
             image: require('../../media/my-crypto-base.jpg'),
-            desc: "My crypto base is a small side project in connection with my interest cryptocurrencies. In this platform you can see some informations about the top listed cryptocurrencies at the moment such as the price, the volatility, the market cap, etc. This projec",
+            desc_fr: "My crypto base est un petit projet personnel en lien avec mon intérêt avec les cryptodevises. Dans cette plateforme vous pouvez voir quelques informations à propos des devises listés dans le top 100 en ce moment, tel que le prix, la volatilité, la valeur du marché et plus.",
+            desc_en: "My crypto base is a small side project in connection with my interest cryptocurrencies. In this platform you can see some informations about the top listed cryptocurrencies at the moment such as the price, the volatility, the market cap, etc.",
             tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
         },
         {
             title: "La Patisserie",
             image: require('../../media/la-patisserie.jpg'),
-            desc: "La Patisserie was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
+            desc_fr: "La Patisserie est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B. ",
+            desc_en: "La Patisserie was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
+            url: "http://la-patisserie.ca/",
             tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
         },
         {
             title: "Le Cuistot",
             image: require('../../media/le-cuistot.jpg'),
-            desc: "Le Cuitot was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
+            desc_fr: "Le Cuistot est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B.",
+            desc_en: "Le Cuitot was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
+            url: "http://cuistot.ca/",
             tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
         },
     ]
@@ -151,7 +176,7 @@ const Portfolio = props => {
 
                                     <div className="project-description-cnt">
                                         <div className="project-title">{project.title}</div>
-                                        <div className="project-desc">{project.desc}</div>
+                                        <div className="project-desc">{state.lang === 'fr' ? project.desc_fr : project.desc_en}</div>
                                         {
                                             project.url ?
                                                 (
