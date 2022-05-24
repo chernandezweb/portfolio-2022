@@ -41,8 +41,8 @@ const Home = props => {
                         </a>
                     </div>
                 </div>
-
             </div>
+
             <div className="bottom-section">
                 <div className="about-me-side">
                     <p className="about-me-title">{t('home-page-about-me-label-1')} <span>{t('home-page-about-me-label-2')}</span></p>
