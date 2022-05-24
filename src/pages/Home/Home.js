@@ -49,25 +49,25 @@ const Home = props => {
                 </div>
                 <div className="infos-side">
                     <div>
-                        <span>Age</span>
+                        <span>{t('home-page-age')}</span>
                         <span>24</span>
                     </div>
                     <div>
-                        <span>Languages</span>
-                        <span>French, English and Spanish</span>
+                        <span>{t('home-page-languages')}</span>
+                        <span>{t('home-page-languages-text')}</span>
                     </div>
                     <div>
-                        <span>Residence</span>
+                        <span>{t('home-page-country')}</span>
                         <span>Canada</span>
                     </div>
 
                     <div>
-                        <span>Address</span>
+                        <span>{t('home-page-address')}</span>
                         <span>Montreal, Canada</span>
                     </div>
 
                     <div>
-                        <span>Email</span>
+                        <span>{t('home-page-email')}</span>
                         <span>chernandezweb@gmail.com</span>
                     </div>
                 </div>
