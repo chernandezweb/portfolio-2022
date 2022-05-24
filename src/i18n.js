@@ -8,11 +8,19 @@ const resources = {
     en: {
         translation: {
             "home-page-full-stack-dev": "Full-Stack Developer",
+            "home-page-about-me-label-1": "About",
+            "home-page-about-me-label-2": "me",
+            "home-page-about-me-text": "Hello, I'm Carlos Hernandez. I am a Full-Stack web developer from the south-shore of Montreal (Qc, Canada).",
+            "home-page-download-resume": "DOWNLOAD RESUME",
         }
     },
     fr: {
         translation: {
             "home-page-full-stack-dev": "Développeur Full-Stack",
+            "home-page-about-me-label-1": "À propos de",
+            "home-page-about-me-label-2": "moi",
+            "home-page-about-me-text": "Hello, I'm Carlos Hernandez. I am a Full-Stack web developer from the south-shore of Montreal (Qc, Canada).",
+            "home-page-download-resume": "TÉLÉCHARGER MON CV",
         }
     }
 };
