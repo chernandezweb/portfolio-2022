@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useAppContext } from "../../useAppState";
 import { useTranslation } from "react-i18next";
+import resumeFR from '../../media/Carlos Hernandez-CV-2022 (FR).pdf';
+import resumeEN from '../../media/Carlos Hernandez-CV-2022 (EN).pdf';
 
 const Home = props => {
 
@@ -45,7 +47,12 @@ const Home = props => {
                 <div className="about-me-side">
                     <p className="about-me-title">{t('home-page-about-me-label-1')} <span>{t('home-page-about-me-label-2')}</span></p>
                     <p className="about-me-text">{t('home-page-about-me-text')}</p>
-                    <button className="resume-btn">{t('home-page-download-resume')}</button>
+                    <a href={resumeFR} target="_blank" rel="noreferrer" style={{ marginRight: 15 }}>
+                        <button className="resume-btn">{t('home-page-download-resume')} (FR)</button>
+                    </a>
+                    <a href={resumeEN} target="_blank" rel="noreferrer" >
+                        <button className="resume-btn">{t('home-page-download-resume')} (EN)</button>
+                    </a>
                 </div>
                 <div className="infos-side">
                     <div>
