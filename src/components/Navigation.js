@@ -13,6 +13,15 @@ const Navigation = props => {
         setDisplayMobileMenu(false)
     };
 
+    const changeLangHandler = (e) => {
+        e.preventDefault();
+        if (state.lang === "fr") {
+            actions.changeLang('en')
+        } else {
+            actions.changeLang('fr')
+        }
+    };
+
     return (
         <div className="menu">
             <div className="desktop-menu">
@@ -21,6 +30,7 @@ const Navigation = props => {
                 <nav>
                     <Link to="/portfolio-developer" className={state.pageName === "Home" ? 'menu-page-active' : ''}>Home</Link>
                     <Link to="/portfolio-developer/portfolio" className={state.pageName === "Portfolio" ? 'menu-page-active' : ''}>Portfolio</Link>
+                    <button className="lang-selector" onClick={changeLangHandler}>{state.lang === "fr" ? "EN" : "FR"}</button>
                 </nav>
             </div>
 
@@ -36,6 +46,14 @@ const Navigation = props => {
                 <nav className={'mobile-nav ' + (displayMobileMenu ? 'mobile-nav-visible' : 'mobile-nav-hidden')} >
                     <Link to="/portfolio-developer" onClick={closeMenu}>Home</Link>
                     <Link to="/portfolio-developer/portfolio" onClick={closeMenu}>Portfolio</Link>
+                    <button
+                        className="lang-selector"
+                        onClick={(e) => {
+                            changeLangHandler(e);
+                            closeMenu()
+                        }}>
+                        {state.lang === "fr" ? "EN" : "FR"}
+                    </button>
                 </nav>
             </div>
 

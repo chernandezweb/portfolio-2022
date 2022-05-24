@@ -15,7 +15,8 @@ const Portfolio = props => {
         {
             title: "Icité (lms)",
             image: require('../../media/lms-icite.jpg'),
-            desc: "icite lms",
+            desc: "icite lms \n\nDemo Account (Connexion externe)-----\nemail: test@icite.ca\npassword: demo123",
+            url: "https://icite.ca/",
             tech: "React, NodeJs"
         },
         {
@@ -85,6 +86,18 @@ const Portfolio = props => {
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
+            title: "Max et Livia",
+            image: require('../../media/max-et-livia.jpg'),
+            desc: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
+            tech: "Twig, Html, SCSS, Javascript, Jquery"
+        },
+        {
+            title: "Fous des bateaux",
+            image: require('../../media/fous-des-bateaux.jpg'),
+            desc: "The (On joue au docteur) project was to develop the front end side for the new TV show at CanalVie called On joue au docteur.",
+            tech: "Twig, Html, SCSS, Javascript, Jquery"
+        },
+        {
             title: "My Crypto Base",
             image: require('../../media/my-crypto-base.jpg'),
             desc: "My crypto base is a small side project in connection with my interest cryptocurrencies. In this platform you can see some informations about the top listed cryptocurrencies at the moment such as the price, the volatility, the market cap, etc. This projec",
@@ -132,10 +145,19 @@ const Portfolio = props => {
                         return (
                             <Zoom>
                                 <div className="project-cnt">
-                                    <img className="project-image" src={project.image} alt={project.title} />
+                                    <div className="project-image-cnt" >
+                                        <img className="project-image" src={project.image} alt={project.title} />
+                                    </div>
+
                                     <div className="project-description-cnt">
                                         <div className="project-title">{project.title}</div>
                                         <div className="project-desc">{project.desc}</div>
+                                        {
+                                            project.url ?
+                                                (
+                                                    <div className="project-url"><a href={project.url} target="_blank" rel="noreferrer">{project.url}</a></div>
+                                                ) : null
+                                        }
                                         <div className="project-tech">{project.tech}</div>
                                     </div>
                                 </div>

@@ -4,9 +4,11 @@ import avatarProfile from '../../media/avatar-profile.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useAppContext } from "../../useAppState";
+import { useTranslation } from "react-i18next";
 
 const Home = props => {
 
+    const { t } = useTranslation();
     const { state, actions } = useAppContext();
 
     useEffect(() => {
@@ -26,7 +28,7 @@ const Home = props => {
                 </div>
                 <div className="name-side">
                     <h1>Carlos Hernandez</h1>
-                    <p>Full-Stack Developer</p>
+                    <p>{t('home-page-full-stack-dev')}</p>
                     <div className="links">
                         <a href="https://github.com/chernandezweb" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} />

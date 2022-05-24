@@ -1,4 +1,6 @@
 import React, { useState, useContext, useMemo } from 'react';
+import i18n from "i18next";
+import Cookies from 'js-cookie'
 
 /**
  * custom React hook to manage state
@@ -13,7 +15,8 @@ const AppContext = React.createContext({});
 // }
 
 const initialState = {
-    pageName: ""
+    pageName: "",
+    lang: Cookies.get('lang') ? Cookies.get('lang') : 'fr',
 };
 
 
@@ -37,6 +40,11 @@ const getActions = setState => ({
     setPageName: (name) => {
         setState(state => ({ ...state, pageName: name }));
     },
+    changeLang: (lang) => {
+        setState(state => ({ ...state, lang: lang }));
+        i18n.changeLanguage(lang);
+        Cookies.set('lang', lang, { expires: 90 });
+    }
 });
 
 

@@ -85,6 +85,25 @@ body,
             }
           }
         }
+
+        .lang-selector {
+          border: none;
+          border-radius: 7px;
+          background-color: $portfolio-blue;
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          width: 40px;
+          height: 40px;
+          margin: 0 0 0 15px;
+          @include transition(all linear 0.25s);
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(46, 46, 46);
+            color: $portfolio-blue;
+          }
+        }
       }
     }
 
@@ -142,6 +161,24 @@ body,
 
             &:hover {
               color: rgb(24, 24, 24);
+            }
+          }
+
+          .lang-selector {
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(46, 46, 46);
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            margin: 0 0 0 0;
+            @include transition(all linear 0.25s);
+
+            &:hover {
+              cursor: pointer;
+              color: $portfolio-blue;
             }
           }
 
@@ -367,15 +404,19 @@ body,
           align-items: center;
         }
 
-        .project-image {
-          width: 350px;
-          height: auto;
-          border-radius: 7px;
 
-          @media #{$md-device} {
-            margin: 0 0 25px 0;
+        .project-image-cnt {
+          .project-image {
+            width: 350px;
+            height: auto;
+            border-radius: 7px;
+
+            @media #{$md-device} {
+              margin: 0 0 25px 0;
+            }
           }
         }
+
 
         .project-description-cnt {
           padding: 0 0 0 25px;
@@ -392,6 +433,14 @@ body,
             color: $titles-grey;
             font-weight: bold;
             font-size: 20px;
+          }
+
+          .project-desc {
+            white-space: pre-line;
+          }
+
+          .project-url {
+            padding: 25px 0;
           }
 
           .project-tech {
