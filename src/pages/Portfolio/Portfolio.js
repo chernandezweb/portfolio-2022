@@ -2,10 +2,17 @@ import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import Zoom from 'react-reveal/Zoom';
 import { useAppContext } from "../../useAppState";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 const Portfolio = props => {
 
     const { state, actions } = useAppContext();
+
+    const [isLightBoxOpen, setIsLightBoxOpen] = useState(false);
+    const [currentQImage, setCurrentQImage] = useState('');
 
     useEffect(() => {
         actions.setPageName('Portfolio');
@@ -15,7 +22,7 @@ const Portfolio = props => {
         {
             title: "Icité (lms)",
             image: require('../../media/lms-icite.jpg'),
-            desc_fr: "Icité est une plateforme de formation en ligne utilisée par le réseau de courtage d'Intact Assurance ainsi que les employé et souscripteur. Étant le seul développeur lors du lancement de cette idée au sein de l'équipe Formation et Développement j'ai dévoloppé cette plateforme 'from scratch' pour survenir aux différents besoin de formation dont les autres plateforme internes ne répondaient pas.  \n\nDemo Account (Connexion externe)-----\nemail: test@icite.ca\npassword: demo123",
+            desc_fr: "Icité est une plateforme de formation en ligne utilisée par le réseau de courtage d'Intact Assurance ainsi que les employé et souscripteur. Étant le seul développeur lors du lancement de cette idée au sein de l'équipe Formation et Développement j'ai développé cette plateforme 'from scratch' pour survenir aux différents besoin de formation dont les autres plateforme internes ne répondaient pas.  \n\nDemo Account (Connexion externe)-----\nemail: test@icite.ca\npassword: demo123",
             desc_en: "Icité is an online training platform used by the Intact Insurance brokerage network as well as employees and underwriters. Being the only developer when launching this idea within the Training and Development team, I developed this platform 'from scratch' to meet the different training needs that other internal platforms did not meet. \n\nDemo Account (External Connection)-----\nemail: test@icite.ca\npassword: demo123",
             url: "https://icite.ca/",
             tech: "React, NodeJs, GraphQl"
@@ -171,7 +178,21 @@ const Portfolio = props => {
                             <Zoom>
                                 <div className="project-cnt">
                                     <div className="project-image-cnt" >
-                                        <img className="project-image" src={project.image} alt={project.title} />
+                                        <img
+                                            className="project-image"
+                                            src={project.image}
+                                            alt={project.title}
+                                        />
+                                        <div
+                                            className={'zoom-image-btn'}
+                                            onClick={() => {
+                                                setCurrentQImage(project.image)
+                                                setTimeout(() => {
+                                                    setIsLightBoxOpen(true);
+                                                }, 500)
+                                            }}>
+                                            <FontAwesomeIcon icon={faPlusCircle} />
+                                        </div>
                                     </div>
 
                                     <div className="project-description-cnt">
@@ -192,6 +213,12 @@ const Portfolio = props => {
                 }
 
             </div>
+            {isLightBoxOpen && currentQImage && (
+                <Lightbox
+                    mainSrc={currentQImage}
+                    onCloseRequest={() => setIsLightBoxOpen(false)}
+                />
+            )}
 
         </motion.div>
     )
