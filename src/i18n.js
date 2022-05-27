@@ -27,7 +27,7 @@ const resources = {
             "home-page-full-stack-dev": "Développeur Full-Stack",
             "home-page-about-me-label-1": "À propos de",
             "home-page-about-me-label-2": "moi",
-            "home-page-about-me-text": "Bonjour, je m'appelle Carlos Hernandez. Je suis un développer web Full-Stack provenant de la rive-sude de Montréal (Qc, Canada)",
+            "home-page-about-me-text": "Bonjour, je m'appelle Carlos Hernandez. Je suis un développer web Full-Stack provenant de la rive-sud de Montréal (Qc, Canada)",
             "home-page-download-resume": "TÉLÉCHARGER MON CV",
             "home-page-age": "Âge",
             "home-page-languages": "Languages",
