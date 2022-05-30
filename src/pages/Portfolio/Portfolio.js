@@ -66,6 +66,14 @@ const Portfolio = props => {
             tech: "Twig, Html, SCSS, Javascript, Jquery"
         },
         {
+            title: "La tournée zone jeunesse (LÜ)",
+            image: require('../../media/zone-jeunnesse.jpg'),
+            video: 'https://ici.radio-canada.ca/tourneezonejeunesse/medias/videos/RC_TourneeZoneJeunesse_2020-generic.mp4',
+            desc_fr: "Ce projet consistait à  aider au débeloppement de quelques jeux projetés dans des gymnases d'école et avec lesquels les enfants peuvent intéragir en lançant des ballons sur le mur.",
+            desc_en: "This project consisted to help in developing some games projected in school gymnasiums and with which children can interact by throwing balls to the wall.",
+            tech: "Unity"
+        },
+        {
             title: "Interactive game Zone des lions (Zoo Granby)",
             image: require('../../media/zoo-granby-lions.jpg'),
             desc_fr: "Ce projet consistait à développer une plateforme intéractive avec Unity pour afficher du contenu à propos de la zone des lions au Zoo Granby.",
@@ -134,7 +142,7 @@ const Portfolio = props => {
         {
             title: "La Patisserie",
             image: require('../../media/la-patisserie.jpg'),
-            desc_fr: "La Patisserie est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B. ",
+            desc_fr: "La Patisserie est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B.",
             desc_en: "La Patisserie was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
             url: "http://la-patisserie.ca/",
             tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
@@ -204,6 +212,16 @@ const Portfolio = props => {
                                                     <div className="project-url"><a href={project.url} target="_blank" rel="noreferrer">{project.url}</a></div>
                                                 ) : null
                                         }
+
+                                        {
+                                            project.video ?
+                                                (
+                                                    <video width="320" height="240" controls>
+                                                        <source src={project.video} type="video/mp4" />
+                                                    </video>
+                                                ) : null
+                                        }
+
                                         <div className="project-tech">{project.tech}</div>
                                     </div>
                                 </div>
