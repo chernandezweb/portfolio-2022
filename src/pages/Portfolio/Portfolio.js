@@ -69,7 +69,7 @@ const Portfolio = props => {
             title: "La tournée zone jeunesse (LÜ)",
             image: require('../../media/zone-jeunnesse.jpg'),
             video: 'https://ici.radio-canada.ca/tourneezonejeunesse/medias/videos/RC_TourneeZoneJeunesse_2020-generic.mp4',
-            desc_fr: "Ce projet consistait à  aider au débeloppement de quelques jeux projetés dans des gymnases d'école et avec lesquels les enfants peuvent intéragir en lançant des ballons sur le mur.",
+            desc_fr: "Ce projet consistait à  aider au développement de quelques jeux projetés dans des gymnases d'école et avec lesquels les enfants peuvent intéragir en lançant des ballons sur le mur.",
             desc_en: "This project consisted to help in developing some games projected in school gymnasiums and with which children can interact by throwing balls to the wall.",
             tech: "Unity"
         },
