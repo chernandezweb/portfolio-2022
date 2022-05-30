@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-developer/static/css/main.ebe50659.css",
-    "main.js": "/portfolio-developer/static/js/main.2e174164.js",
+    "main.js": "/portfolio-developer/static/js/main.822fa771.js",
     "static/js/787.69a70f5a.chunk.js": "/portfolio-developer/static/js/787.69a70f5a.chunk.js",
     "static/media/zone-jeunnesse.jpg": "/portfolio-developer/static/media/zone-jeunnesse.15da0dfcafde62cdf156.jpg",
     "static/media/avatar-profile.jpg": "/portfolio-developer/static/media/avatar-profile.50f4b445e183a58555e9.jpg",
@@ -26,11 +26,11 @@
     "static/media/Carlos Hernandez-CV-2022 (EN).pdf": "/portfolio-developer/static/media/Carlos Hernandez-CV-2022 (EN).53ce8a0f9d2f96c0d250.pdf",
     "index.html": "/portfolio-developer/index.html",
     "main.ebe50659.css.map": "/portfolio-developer/static/css/main.ebe50659.css.map",
-    "main.2e174164.js.map": "/portfolio-developer/static/js/main.2e174164.js.map",
+    "main.822fa771.js.map": "/portfolio-developer/static/js/main.822fa771.js.map",
     "787.69a70f5a.chunk.js.map": "/portfolio-developer/static/js/787.69a70f5a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebe50659.css",
-    "static/js/main.2e174164.js"
+    "static/js/main.822fa771.js"
   ]
 }
