@@ -131,30 +131,7 @@ const Portfolio = props => {
             desc_fr: "Le projet (Fous des bateaux) était de développer le côté front-end du site web pour la série télé Fous des bateaux.",
             desc_en: "The project (Fous des bateaux) was to develop the front-end side of the website for the TV series Fous des bateaux.",
             tech: "Twig, Html, SCSS, Javascript, Jquery"
-        },
-        {
-            title: "My Crypto Base",
-            image: require('../../media/my-crypto-base.jpg'),
-            desc_fr: "My crypto base est un petit projet personnel en lien avec mon intérêt avec les cryptodevises. Dans cette plateforme vous pouvez voir quelques informations à propos des devises listés dans le top 100 en ce moment, tel que le prix, la volatilité, la valeur du marché et plus.",
-            desc_en: "My crypto base is a small side project in connection with my interest cryptocurrencies. In this platform you can see some informations about the top listed cryptocurrencies at the moment such as the price, the volatility, the market cap, etc.",
-            tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
-        },
-        {
-            title: "La Patisserie",
-            image: require('../../media/la-patisserie.jpg'),
-            desc_fr: "La Patisserie est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B.",
-            desc_en: "La Patisserie was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
-            url: "http://la-patisserie.ca/",
-            tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
-        },
-        {
-            title: "Le Cuistot",
-            image: require('../../media/le-cuistot.jpg'),
-            desc_fr: "Le Cuistot est un petit site web développé pour Orly Cuisine dans le but de présenter une marque de leurs produit pour leur clients B2B.",
-            desc_en: "Le Cuitot was a small website made for Orly Cuisine to present a brand of their porducts for their B2B clients.",
-            url: "http://cuistot.ca/",
-            tech: "React, Html, SCSS, Javascript, Rxjs, ES6"
-        },
+        }
     ]
 
     return (
@@ -210,7 +187,13 @@ const Portfolio = props => {
                                             project.url ?
                                                 (
                                                     <div className="project-url"><a href={project.url} target="_blank" rel="noreferrer">{project.url}</a></div>
-                                                ) : null
+                                                )
+                                                :
+                                                (
+                                                    <div className="project-url">
+                                                        {state.lang === 'fr' ? '(URL non disponible' : 'URL not available'}
+                                                    </div>
+                                                )
                                         }
 
                                         {
