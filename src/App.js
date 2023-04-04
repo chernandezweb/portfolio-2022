@@ -12,6 +12,7 @@ function App() {
 
   const { state, actions } = useAppState();
 
+
   return (
     <AppContext.Provider value={{ state, actions }} >
       <div className="app">
