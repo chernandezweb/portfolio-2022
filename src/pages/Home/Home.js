@@ -11,7 +11,7 @@ import resumeEN from '../../media/Carlos Hernandez-CV-2022 (EN).pdf';
 const Home = props => {
 
     const { t } = useTranslation();
-    const { state, actions } = useAppContext();
+    const { actions } = useAppContext();
 
     useEffect(() => {
         actions.setPageName('Home');
@@ -57,7 +57,7 @@ const Home = props => {
                 <div className="infos-side">
                     <div>
                         <span>{t('home-page-age')}</span>
-                        <span>24</span>
+                        <span>25</span>
                     </div>
                     <div>
                         <span>{t('home-page-languages')}</span>

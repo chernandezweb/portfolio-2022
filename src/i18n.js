@@ -42,8 +42,8 @@ i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
         resources,
-        lng: Cookies.get('lang') ? Cookies.get('lang') : 'fr',
-        fallbackLng: Cookies.get('lang') ? Cookies.get('lang') : 'fr', // use en if detected lng is not available
+        lng: Cookies.get('lang') ? Cookies.get('lang') : 'en',
+        fallbackLng: Cookies.get('lang') ? Cookies.get('lang') : 'en', // use en if detected lng is not available
 
         keySeparator: false, // we do not use keys in form messages.welcome
 
