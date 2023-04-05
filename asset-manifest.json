@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio-developer/static/css/main.ebe50659.css",
-    "main.js": "/portfolio-developer/static/js/main.f076d527.js",
+    "main.js": "/portfolio-developer/static/js/main.63b86629.js",
     "static/js/787.0022e730.chunk.js": "/portfolio-developer/static/js/787.0022e730.chunk.js",
     "static/media/zone-jeunnesse.jpg": "/portfolio-developer/static/media/zone-jeunnesse.15da0dfcafde62cdf156.jpg",
     "static/media/avatar-profile.jpg": "/portfolio-developer/static/media/avatar-profile.50f4b445e183a58555e9.jpg",
+    "static/media/Carlos_Hernandez(EN).pdf": "/portfolio-developer/static/media/Carlos_Hernandez(EN).dfe4dbac154ed19a9ea2.pdf",
+    "static/media/Carlos_Hernandez(FR).pdf": "/portfolio-developer/static/media/Carlos_Hernandez(FR).442c69200195c3260eb2.pdf",
     "static/media/clash.jpg": "/portfolio-developer/static/media/clash.1328bed0578eed2c85db.jpg",
     "static/media/max-et-livia.jpg": "/portfolio-developer/static/media/max-et-livia.25bda8dd4c5abcde64dd.jpg",
     "static/media/zoo-granby-lions.jpg": "/portfolio-developer/static/media/zoo-granby-lions.2e6d1e3fcd5bd9292291.jpg",
@@ -19,15 +21,13 @@
     "static/media/outils-web-intact.jpg": "/portfolio-developer/static/media/outils-web-intact.8f17c5b39e7f51b186c3.jpg",
     "static/media/explora.jpg": "/portfolio-developer/static/media/explora.5668c44287bc2d5edd95.jpg",
     "static/media/legeropinion.jpg": "/portfolio-developer/static/media/legeropinion.1389148ee405b7f9e749.jpg",
-    "static/media/Carlos Hernandez-CV-2022 (FR).pdf": "/portfolio-developer/static/media/Carlos Hernandez-CV-2022 (FR).43624ca45179865966a5.pdf",
-    "static/media/Carlos Hernandez-CV-2022 (EN).pdf": "/portfolio-developer/static/media/Carlos Hernandez-CV-2022 (EN).53ce8a0f9d2f96c0d250.pdf",
     "index.html": "/portfolio-developer/index.html",
     "main.ebe50659.css.map": "/portfolio-developer/static/css/main.ebe50659.css.map",
-    "main.f076d527.js.map": "/portfolio-developer/static/js/main.f076d527.js.map",
+    "main.63b86629.js.map": "/portfolio-developer/static/js/main.63b86629.js.map",
     "787.0022e730.chunk.js.map": "/portfolio-developer/static/js/787.0022e730.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebe50659.css",
-    "static/js/main.f076d527.js"
+    "static/js/main.63b86629.js"
   ]
 }
