@@ -7,10 +7,10 @@ const resources = {
     en: {
         translation: {
             "menu-home": "Home",
-            "home-page-full-stack-dev": "Full-Stack Developer",
+            "home-page-full-stack-dev": "Full Stack Developer",
             "home-page-about-me-label-1": "About",
             "home-page-about-me-label-2": "me",
-            "home-page-about-me-text": "Hello, I'm Carlos Hernandez. I am a Full-Stack web developer from the south-shore of Montreal (Qc, Canada).",
+            "home-page-about-me-text": "Hello, I'm Carlos Hernandez. I am a experienced Full Stack Developer with 4+ years of experience developing websites and applications using the latest technologies.",
             "home-page-download-resume": "DOWNLOAD RESUME",
             "home-page-age": "Age",
             "home-page-languages": "Languages",
@@ -23,10 +23,10 @@ const resources = {
     fr: {
         translation: {
             "menu-home": "Accueil",
-            "home-page-full-stack-dev": "Développeur Full-Stack",
+            "home-page-full-stack-dev": "Développeur Full Stack",
             "home-page-about-me-label-1": "À propos de",
             "home-page-about-me-label-2": "moi",
-            "home-page-about-me-text": "Bonjour, je m'appelle Carlos Hernandez. Je suis un développer web Full-Stack provenant de la rive-sud de Montréal (Qc, Canada)",
+            "home-page-about-me-text": "Bonjour, je m'appelle Carlos Hernandez. Je suis un développeur Full Stack expérimenté avec plus de 4 ans d'expérience dans le développement de sites Web et d'applications utilisant les dernières technologies.",
             "home-page-download-resume": "TÉLÉCHARGER MON CV",
             "home-page-age": "Âge",
             "home-page-languages": "Languages",

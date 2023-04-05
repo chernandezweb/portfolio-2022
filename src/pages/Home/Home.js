@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useAppContext } from "../../useAppState";
 import { useTranslation } from "react-i18next";
-import resumeFR from '../../media/Carlos Hernandez-CV-2022 (FR).pdf';
-import resumeEN from '../../media/Carlos Hernandez-CV-2022 (EN).pdf';
+import resumeFR from '../../media/Carlos_Hernandez(FR).pdf';
+import resumeEN from '../../media/Carlos_Hernandez(EN).pdf';
 
 const Home = props => {
 
